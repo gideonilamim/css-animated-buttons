@@ -14,6 +14,7 @@ a{
     padding: 40px 80px;
     position: relative;
     overflow: hidden;
+    transition: all 1s;
     
 }
 
@@ -32,4 +33,8 @@ a::before{
 
 a:hover::before{
     transform: translateX(0);
+}
+
+a:hover{
+    color: white;
 }
