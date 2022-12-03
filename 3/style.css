@@ -19,3 +19,38 @@ a{
     
 }
 
+a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 101%;
+    background-color: #262626;
+    transition: all 1s;
+    transform: rotateX(90deg);
+    z-index: -1;
+}
+a:hover::before{
+    transform: rotateX(0deg);
+}
+
+a::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 101%;
+    background-color: #262626;
+    transition: all 1s;
+    transform: rotateY(90deg);
+    z-index: -1;
+}
+a:hover::after{
+    transform: rotateY(0deg);
+}
+
+a:hover{
+    color: white;
+}
