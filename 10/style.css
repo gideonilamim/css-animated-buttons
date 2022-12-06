@@ -3,4 +3,57 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
+    background-color: #212121;
+}
+
+a{
+    text-decoration: none;
+    background: #f1c40f;
+    color:white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;    
+}
+
+.btn:hover{
+    color: white;
+}
+
+a:before{
+    content: 'button';
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#2ce771;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform-origin: top;
+    transform: rotateX(270deg);
+}
+a:hover:before, a:hover:after{
+    transform: rotateX(0deg);
+}
+a:after{
+    content: 'button';
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+    transform-origin: bottom;
+    transform: rotateX(270deg);
 }
